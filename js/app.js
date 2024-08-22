@@ -16,6 +16,9 @@ mongoose.connect(process.env.DB_URL)
 app.use(express.urlencoded({ extended: false}));
 
 // configurar la ruta
+app.get("/", function (req,res){
+    res.send("Hello you");
+});
 app.use("/products", productRoutes);
 app.use("/sales", salesRoutes);
 
