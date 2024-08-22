@@ -78,7 +78,8 @@ img{
     background: var(--rojo);
     border: none;
     color: var(--blanco);
-    font-size: 30px; 
+    font-size: 40px; 
+    text-decoration: none;
     border-radius: 15px;
     padding: 8px;
     font-weight: 500;
@@ -472,10 +473,11 @@ margin-top: 30px;
     list-style: none;
     padding: 0;
 }
-.footer-column li {
+.footer-column li a {
     color: hsl(0, 0%, 90%);
     margin-bottom: 5px;
     font-size: 15px;
+    text-decoration: none;
 }
 
 /*Menu*/

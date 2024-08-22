@@ -1,12 +1,14 @@
 const express = require("express");
 const mongoose = require('mongoose');
 const app = express();
+require('dotenv').config();
+
 // Importar rutas
 const productRoutes = require("../src/routes/product.routes.js");
-const salesRoutes = require("./src/routes/sales.routes.js");
+const saleRoutes = require("./src/routes/sale.routes.js");
 
 // conexión a mongoose 
-mongoose.connect("mongodb+srv://garangi158:PycsrOanIVjjC18l@cluster0.zgdgg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect(process.env.DB_URL)
 .then((db) => console.log("Conected"))
 .catch((err) => console.log(err));
 
