@@ -120,10 +120,23 @@ img{
     font-weight: 500;
     text-shadow: 2px 2px 3px rgba(11, 0, 0, 0.5);
 }
+.bannerm h1{
+    font-size: 35px;
+    font-weight: 500;
+}
 .button__bannerm:hover{
     background: var(--azul);
 }
-
+/* banner conócenos */
+.bannerc{
+    height: 70vh;
+    margin-top: -1px;
+    position: relative;
+    background: url('/img/decoracion.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 /* Texto de presentacion */
 .presentacion{
@@ -171,7 +184,7 @@ img{
     border-radius: 30px;
     margin-top: 2rem;;
 }
-
+.banner2
 .txtReserva{
     margin: 20px;
 }
@@ -210,6 +223,28 @@ img{
     font-size: 28px;
 }
 .banner2__descripcion{
+position: absolute;
+width: 100%;
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+text-align: center;
+}
+
+/* BANNER RESERVAS CONOCENOS */
+.bannerrc{
+    height: 50vh;
+    color: #fff;
+    position: relative;
+    background: url('/img/Picada\ \(2\).jpg');
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+}
+.bannerrc h1{
+    font-size: 28px;
+}
+.bannerrc__descripcion{
 position: absolute;
 width: 100%;
 top: 50%;
@@ -368,7 +403,7 @@ margin-top: 30px;
     gap: 4rem;
 }
 .input-encabezado {
-    margin-bottom: 1rem;
+    margin-bottom: 13px;
     width: 100%;
     font-size: 17px;
     color: hwb(0 100% 0%);
@@ -392,7 +427,7 @@ margin-top: 30px;
     font-weight: 500;
     text-shadow: 2px 2px 3px rgba(11, 0, 0, 0.5); 
     text-align: center; 
-    margin-top: 7px;  
+    margin-top: 15px;  
 }
 /* pág reservas - banner reservas*/
 .bannerr{
@@ -479,6 +514,10 @@ margin-top: 30px;
     font-size: 15px;
     text-decoration: none;
 }
+.footer-column img{
+    height: 80%;
+    width: auto;
+}
 
 /*Menu*/
 .container-pro {
@@ -529,6 +568,8 @@ margin-top: 30px;
     font-weight: 400;
     text-shadow: 2px 2px 3px rgba(11, 0, 0, 0.5);
     text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 .boton:hover{
     background: var(--rojo);
