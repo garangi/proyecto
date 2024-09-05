@@ -1,7 +1,7 @@
 /*variables de entorno*/
 :root {
-    --rojo: #ff0048;
-    --azul: #006eb7;
+    --rojo: rgb(227, 2, 84);
+    --azul: #03578f;
     --blanco: #fefcfb;
     --titulos: 'Roboto', bold;
     --parrafos: 'Oswald', sans-serif;
@@ -23,13 +23,11 @@ body {
 
 /* menú navegacion  */
 .navegacion{
-    position:relative;
     width: 100%;
-    padding: 2rem;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     background-color: var(--rojo);
-    font-family: var(--titulos);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
 }
 .nav a{
     font-size: 2rem;
@@ -45,19 +43,26 @@ body {
 .logov{
     width: 250px;
 }
+.carrito{
+    width: 150px;
+}
+
 .navegacion a:hover {
     background-color: var(--azul);
     border-radius: 17px;
+    color: var(--blanco);
+    text-shadow: 0px 0px 1px rgba(11, 0, 0, 0.5);
 }
 img{
     width: 100%;
+    padding: 1rem;
 }
 /* BANNER INICIAL */
 .banner{
-    height: 70vh;
+    height: 80vh;
     margin-top: -1px;
     position: relative;
-    background: url('/img/Lugar.jpg');
+    background: url('/img/galeria4.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -139,30 +144,19 @@ img{
 }
 
 /* Texto de presentacion */
-.presentacion{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    max-width: 110rem;
-    margin:auto;
-    padding-top: 20px;
-}
 .card{
-    width: 80%;
-    margin: 1rem;
-    border-radius: 82rem;
+    width: ;
     background-color: var(--blanco);
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
     margin-top: 22px;
 }
 .t2{
-    color: #ff0048;
+    color: var(--rojo);
     font-size: 28px;
     text-align:center;
 }
 .t3{
-    color: #006eb7;
+    color: #3f4a52;
     font-size: 22px;
     text-align:justify;
 }
@@ -176,7 +170,6 @@ img{
     width: 100%;
     margin-top: 2rem;
     max-width: 110rem;
-    font-family: var(--titulos);
 }
 .cardpf img{
     height: 100%;
@@ -491,11 +484,10 @@ margin-top: 30px;
 .footer-container {
     display: flex;
     justify-content: space-around;
-    max-width: 1200px;
 }
 .footer-column {
     align-items: center;
-    margin-top: 15px;
+    margin-top: 8px;
 }
 .footer-column h2 {
     margin-bottom: 10px;
@@ -510,14 +502,15 @@ margin-top: 30px;
 }
 .footer-column li a {
     color: hsl(0, 0%, 90%);
-    margin-bottom: 5px;
     font-size: 15px;
     text-decoration: none;
 }
-.footer-column img{
-    height: 80%;
-    width: auto;
+.footer img{
+    width:30%;
+    margin-bottom: 5px;
+    align-items: top;
 }
+
 
 /*Menu*/
 .container-pro {
