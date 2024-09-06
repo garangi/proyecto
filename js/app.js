@@ -32,7 +32,3 @@ app.use("/sales", salesRoutes);
 app.listen(3000, () =>{
     console.log("Server Running");
 });
-
-// cardpf = document.getElementById('cardpf')
-// cardpf.style.transform = 'scale(1.9)'
-
