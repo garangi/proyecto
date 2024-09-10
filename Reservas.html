@@ -45,6 +45,8 @@
         <h2 class="t2"><b>Somos el mejor lugar para tardear</b></h2>
         <br>
         <h3 class="t3">Encuéntrate con tus amigos en un espacio muy acogedor para que puedas compartir un momento de juegos. Ideal para invitar a tu crush para deleitar su paladar y llegar a su corazón.</h3>
+      <br>
+      <br>
       </div>
       <div class="col">
       </div>
@@ -52,75 +54,108 @@
     </div>
 </div>
 
-<section class="presentacion">
-  <div class="cardpf">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15903.406930201727!2d-74.1141419!3d4.7954901!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f87e300ebd1e9%3A0x2fd54923146d079c!2sDon%20Verg%C3%BCenzas!5e0!3m2!1sen!2sco!4v1723420965263!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-  <div class="cardpt">
-    
-    <!-- formulario -->
-<div class="contenido-encabezado">
-  <form class="fomulario-encabezado">
-      <h3>¡Celebra con nosotros!</h3>
-      <div class="input-encabezado">
-          <input type="text" placeholder="Nombre completo">
-      </div>
-      <div class="input-encabezado">
-          <input type="number" placeholder="Teléfono">
-      </div>
-      <div class="input-encabezado">
-          <input type="email" placeholder="Email">
-      </div>
-      <div class="final">
-      <div class="input-encabezado">
-        <label for="personas">Cantidad de personas:</label>
-        <input type="number" min="1" max="100" />
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <section class="presentacion">
+        <div class="cardpf">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15903.406930201727!2d-74.1141419!3d4.7954901!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f87e300ebd1e9%3A0x2fd54923146d079c!2sDon%20Verg%C3%BCenzas!5e0!3m2!1sen!2sco!4v1723420965263!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
-    <div class="input-encabezado">
-      <label for="personas">Fecha de la reserva:</label>
-      <input type="date" name="fecha" id="fecha" value="2022-01-01">
+    <div class="col-6">
+      <div class="contenido-encabezado">
+        <form class="fomulario-encabezado">
+            <h3>¡Celebra con nosotros!</h3>
+            <div class="input-encabezado">
+                <input type="text" placeholder="Nombre completo" name="name" id="name">
+            </div>
+            <div class="input-encabezado">
+                <input type="text" placeholder="Teléfono" name="tel" id="tel">
+            </div>
+            <div class="input-encabezado">
+                <input type="email" placeholder="Email" name="email" id="email">
+            </div>
+            <div class="final">
+            <div class="input-encabezado">
+              <label for="personas">Cantidad de personas:</label>
+              <input type="number" min="1" max="100" name="cantidad" id="cantidad">
+          </div>
+          <div class="input-encabezado">
+            <label for="personas">Fecha de la reserva:</label>
+            <input type="date" name="fecha" id="fecha" value="2022-01-01">
+          </div>
+          <div class="input-encabezado">
+            <label for="hora">Hora de la reserva:</label>
+            <select class="form-select" name="hora" id="">
+              <option value="hora">10:00 am</option>
+              <option value="hora">11:00 am</option>
+              <option value="hora">12:00 am</option>
+              <option value="hora">1:00 pm</option>
+              <option value="hora">2:00 pm</option>
+              <option value="hora">3:00 pm</option>
+              <option value="hora">4:00 pm</option>
+              <option value="hora">5:00 pm</option>
+              <option value="hora">6:00 pm</option>
+              </select>
+          </div>
+    </div>
+            <input type="botonr" value="Reservar" class="botonr">
+      </form>
+      </div> 
+      </section>
+    </div>
   </div>
 </div>
-      <input type="botonr" value="Reservar" class="botonr">
+
+
+
+
+<!-- formulario clase -->
+ <div class="container">
+  <div class="row">
+    <div class="col-4">
+<form>
+  <div class="form-floating mb-3">
+    <input type="name" class="form-control" id="floatingInput" placeholder="Name">
+    <label for="floatingInput">Nombre</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">Email address</label>
+  </div>
+  <div class="form-floating">
+    <input type="phone" class="form-control" id="floatingPassword" placeholder="phone">
+    <label for="floatingPassword">Teléfono</label>
+  </div>
+  <br>
+  <div class="form-floating mb-3">
+    <label for="name" class="form-label">Nombre completo</label>
+    <input type="text" class="form-control" id="floatingInput" id="name">
+ </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Dirección de Email</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="mb-3">
+    <label for="telefono" class="form-label">Teléfono</label>
+    <input type="text" class="form-control" id="email">
+  </div>
+  <div class="mb-3">
+    <label for="mensaje" class="form-label">Mensaje</label>
+    <textarea class="form-control" id="mensaje" rows="3"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-</div> 
-</section>
 
-<!-- galeria  -->
-<section class="galeria">
-<div class="contenedor">
-      <h1>Galeria</h1>
-      <article class="grid">
-        <div class="big"><img src="img/Picada (2).jpg" alt=""></div>
-        <div><img src="img/Sin título-1-01.jpg" alt=""></div>
-        <div><img src="img/Sin título-1-02.jpg" alt=""></div>
-        <div><img src="img/Sin título-1-03.jpg" alt=""></div>
-        <div><img src="img/Sin título-1-04.jpg" alt=""></div>
-  </article>
-</div>
 
-<!-- botones iconos  -->
-<div class="container-card">
-  <div class="cardi">
-    <div class="descrip-car">
-      <img src="/img/Icono-02.jpg" alt="imagen compra">
-          <input type="button" value="Antojos" class="button__banner">
     </div>
-</div>
-  <div class="cardi">
-      <div class="descrip-car">
-        <img src="/img/Icono-03.jpg" alt="imagen compra">
-            <input type="button" value="Compra" class="button__banner">
-      </div>
   </div>
-  <div class="cardi">
-      <div class="descrip-car">
-          <img src="/img/Icono-04.jpg" alt="reserva">
-              <input type="button" value="Reserva" class="button__banner">
-      </div>
-  </div>
-</div>
-<br>
+ </div>
+
+
+
 
 
 
@@ -171,6 +206,7 @@
         </div>
       </div>
   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
 </body>
 </html>

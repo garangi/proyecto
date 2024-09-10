@@ -20,7 +20,6 @@ body {
 *::after {
     box-sizing: inherit;
 }
-
 /* menú navegacion  */
 .navegacion{
     width: 100%;
@@ -46,7 +45,6 @@ body {
 .carrito{
     width: 150px;
 }
-
 .navegacion a:hover {
     background-color: var(--azul);
     border-radius: 17px;
@@ -95,10 +93,10 @@ img{
 }
 /* banner menu  */
 .bannerm{
-    height: 70vh;
+    height: 80vh;
     margin-top: -1px;
     position: relative;
-    background: url('/img/pie.jpg');
+    background: url('/img/postre\ amarillo.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -134,7 +132,7 @@ img{
 }
 /* banner conócenos */
 .bannerc{
-    height: 70vh;
+    height: 80vh;
     margin-top: -1px;
     position: relative;
     background: url('/img/decoracion.jpg');
@@ -145,10 +143,13 @@ img{
 
 /* Texto de presentacion */
 .card{
-    width: ;
-    background-color: var(--blanco);
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    margin-top: 22px;
+    margin-top: 40px;
+}
+.cardh{
+    margin-top: 35px;
+    background-color: rgb(244, 248, 248);
+    padding: 7px;
 }
 .t2{
     color: var(--rojo);
@@ -182,13 +183,6 @@ img{
     margin: 20px;
 }
 
-/* línea de fotos */
-.imagenes{
-    display: flex;
-    padding-left: 120px;
-    padding-right: 120px;
-    align-content: center;
-}
 .button__botonmenu{
     background: var(--rojo);
     border: none;
@@ -200,7 +194,10 @@ img{
     text-shadow: 2px 2px 3px rgba(11, 0, 0, 0.5);    
 }
 
-
+.t4{
+    color: var(--azul);
+    margin-bottom: 5px;
+}
 
 /* BANNER RESERVAS */
 .banner2{
@@ -223,11 +220,19 @@ left: 50%;
 transform: translateX(-50%) translateY(-50%);
 text-align: center;
 }
-
+.bannerg{
+    height: 80vh;
+    margin-top: -1px;
+    position: relative;
+    background: url('/img/pie');
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+}
 /* BANNER RESERVAS CONOCENOS */
 .bannerrc{
-    height: 50vh;
-    color: #fff;
+    height: 80vh;
+    margin-top: -1px;
     position: relative;
     background: url('/img/Picada\ \(2\).jpg');
     background-size: cover;
@@ -247,14 +252,14 @@ text-align: center;
 }
 
 /*Estilos iconos*/
-.container-card {
-    display: grid;
-    grid-template-columns: repeat(3, 3fr);
+/* .container-card { */
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 3fr);
     width: 100%;
     margin: auto;
     max-width: 1080px;
     column-gap: 50rem;
-}
+} */
 .cardi{
     margin-top: 2rem;
     border-radius: 6rem;
@@ -411,6 +416,7 @@ margin-top: 30px;
     outline: none;
     font-weight: bold;
 }
+
 .botonr{
     background: var(--rojo);
     color: var(--blanco);
@@ -422,14 +428,22 @@ margin-top: 30px;
     text-align: center; 
     margin-top: 15px;  
 }
-/* pág reservas - banner reservas*/
-.bannerr{
-    height: 70vh;
+/* banner galeria */
+.bannerg{
+    height: 80vh;
     margin-top: -1px;
     position: relative;
-    background: url('/img/galeria4.jpg');
-    background-size: cover;
-    background-position: center;
+    background: url('/img/Picada\ \(2\).jpg');
+    background-size:cover;
+    background-attachment: fixed;
+}
+/* pág reservas - banner reservas*/
+.bannerr{
+    height: 80vh;
+    margin-top: -1px;
+    position: relative;
+    background: url('/img/Sin\ título-1-03.jpg');
+    background-size:cover;
     background-attachment: fixed;
 }
 .bannerr__descripcion{
@@ -480,6 +494,7 @@ margin-top: 30px;
 .footer {
     background-color: var(--azul);
     text-align: center;
+    font-family: var(--titulos);
 }
 .footer-container {
     display: flex;
@@ -508,7 +523,14 @@ margin-top: 30px;
 .footer img{
     width:60%;
 }
-
+.card-text{
+    font-size: 19px;
+    font-family:var(--parrafos);
+    color:hwb(204 31% 39%);
+}
+.t4{
+    text-transform: uppercase
+}
 
 /*Menu*/
 .container-pro {
@@ -566,7 +588,7 @@ margin-top: 30px;
     background: var(--rojo);
 }
 
-
+/* 
 @media(min-width:520px){
     .banner h1{
     font-size: 30px;
@@ -653,4 +675,4 @@ grid-auto-rows: 160px;
     border: 3px solid white;
     background-color: var(--azul);
     display: block;
-}
+} */
