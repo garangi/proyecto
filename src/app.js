@@ -6,10 +6,10 @@ const app = express();
 app.use(cors());
 
 // Importar rutas
-const productRoutes = require("../src/routes/product.routes.js");
-const salesRoutes = require("../src/routes/sale.routes.js");
+const productRoutes = require("./routes/product.routes.js");
+const salesRoutes = require("./routes/sale.routes.js");
 // Formulario
-const contactRoutes = require("../src/routes/contact.routes.js");
+const contactRoutes = require("./routes/contact.routes.js");
 
 require("dotenv").config();
 
