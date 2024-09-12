@@ -1,5 +1,5 @@
 const misRutas=require("express").Router();
-
-misRutas.post("/guardar", ContactsController.guardar());
+const ContactsController=require("../controllers/contacts.controller");
+misRutas.post("/guardar", ContactsController.guardar);
 
 module.exports = misRutas;
